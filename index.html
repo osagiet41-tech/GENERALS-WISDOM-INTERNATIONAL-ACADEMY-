@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Generals Wisdom International Academy · Learn, qualify, and prove it</title>
+  <meta name="description" content="Online courses, live classes, examinations and certificates that anyone can verify.">
+  <meta name="theme-color" content="#1b3358">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="64x64" href="icons/favicon-64.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GWIA">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script src="theme-init.js"></script>
+  <script src="config.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-head">
+    <div class="inner">
+      <a class="brand" href="index.html"><span class="seal" aria-hidden="true">GW</span><span>Generals Wisdom<br>International Academy</span></a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#how">How it works</a><a href="#features">Platform</a><a href="#plans">Plans</a><a href="verify.html">Verify a certificate</a>
+      </nav>
+      <div class="actions" id="site-actions">
+        <button class="btn btn-ghost btn-icon" id="theme-toggle" type="button" aria-label="Toggle dark mode"></button>
+        <a class="btn btn-secondary btn-sm" href="auth.html?mode=login" data-guest>Sign in</a>
+        <a class="btn btn-sm" href="auth.html?mode=register" data-guest>Create account</a>
+        <a class="btn btn-sm hidden" href="#" data-member>Open dashboard</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="inner">
+        <div>
+          <h1 id="hero-title">Study with us. Earn a certificate anyone can check.</h1>
+          <p>Courses, live classes and timed examinations in one place. Every certificate we issue carries an ID and a public verification page, so employers and schools can confirm it in seconds.</p>
+          <div class="row"><a class="btn btn-lg" href="auth.html?mode=register">Start learning</a><a class="btn btn-lg btn-secondary" href="#how">See how it works</a></div>
+        </div>
+        <section class="verify-card" aria-labelledby="verify-title">
+          <h2 id="verify-title">Verify a certificate</h2>
+          <p class="muted small">Enter the Certificate ID printed on the certificate, for example CERT-7F3K-9QXD-M2WA.</p>
+          <form id="verify-form" class="stack-sm" novalidate>
+            <div class="field"><label for="cert-id">Certificate ID</label><input class="input" id="cert-id" name="id" autocomplete="off" autocapitalize="characters" spellcheck="false" required placeholder="CERT-XXXX-XXXX-XXXX"></div>
+            <button class="btn" type="submit">Check certificate</button>
+          </form>
+          <div id="verify-result" aria-live="polite" style="margin-top:14px"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="site-section" id="how" aria-labelledby="how-title">
+      <div class="inner">
+        <h2 id="how-title">From enrolment to certificate</h2>
+        <ol class="grid grid-3" style="list-style:none;padding:0">
+          <li class="card"><h3>1. Enrol</h3><p class="muted">Pick a free or paid course, or subscribe monthly or yearly for access to everything included in your plan.</p></li>
+          <li class="card"><h3>2. Learn</h3><p class="muted">Work through lessons at your pace, join live classes, ask the AI study assistant, and message your teacher.</p></li>
+          <li class="card"><h3>3. Be assessed</h3><p class="muted">Submit assignments, take quizzes, and sit timed examinations with auto-save if your connection drops.</p></li>
+          <li class="card"><h3>4. Get certified</h3><p class="muted">When you meet the course requirements the certificate is issued automatically. Download it as a PDF.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="site-section alt" id="features" aria-labelledby="feat-title">
+      <div class="inner">
+        <h2 id="feat-title">Built for students, teachers and administrators</h2>
+        <div class="grid grid-2">
+          <div><h3>Students</h3><p class="muted">One dashboard for upcoming classes, open assignments, grades, attendance, progress and certificates. Works on a phone.</p></div>
+          <div><h3>Teachers</h3><p class="muted">Create courses, schedule and run live classes, build quizzes and exams, grade submissions, and generate lesson plans with the AI assistant.</p></div>
+          <div><h3>Administrators</h3><p class="muted">Manage users, courses, payments, subscriptions, discount codes and certificates. Reports export to Excel; audit logs record every change.</p></div>
+          <div><h3>Pay your way</h3><p class="muted">Naira and international currencies through Paystack or Flutterwave. Receipts are available as PDF for every payment.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section" id="plans" aria-labelledby="plans-title">
+      <div class="inner">
+        <h2 id="plans-title">Subscription plans</h2>
+        <div id="plans-mount" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot"><div class="inner row" style="justify-content:space-between"><span>© <span id="year"></span> Generals Wisdom International Academy</span><a href="verify.html">Verify a certificate</a></div></footer>
+  <script type="module" src="js/pages/public.js"></script>
+  <script type="module" src="js/pwa.js"></script>
+</body>
+</html>
